@@ -1,0 +1,73 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://m64_tree.png" type="Texture" id=1]
+[ext_resource path="res://n64tree.obj" type="ArrayMesh" id=2]
+
+[sub_resource type="SpatialMaterial" id=2]
+vertex_color_use_as_albedo = true
+albedo_color = Color( 0.0431373, 0.803922, 0, 1 )
+
+[sub_resource type="CubeMesh" id=1]
+material = SubResource( 2 )
+size = Vector3( 25, 1, 50 )
+
+[sub_resource type="CubeMesh" id=3]
+
+[sub_resource type="OpenSimplexNoise" id=6]
+
+[sub_resource type="NoiseTexture" id=5]
+seamless = true
+noise = SubResource( 6 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.415686, 0.282353, 0, 1 )
+albedo_texture = SubResource( 5 )
+uv1_scale = Vector3( 8, 50, 1 )
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_texture = ExtResource( 1 )
+
+[node name="RoadBase" type="Spatial"]
+
+[node name="scunt tf2" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+
+[node name="Sand" type="MeshInstance" parent="scunt tf2"]
+transform = Transform( -6.763, 1.28497e-07, 0, -1.02118e-06, -0.851, 0, 0, 0, 25, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
+
+[node name="n64tree" type="MeshInstance" parent="scunt tf2"]
+transform = Transform( 0.14, 0, 0, 0, 0.14, 0, 0, 0, 0.14, 10.5266, 0.397957, 20.6971 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 7 )
+
+[node name="n64tree2" type="MeshInstance" parent="scunt tf2"]
+transform = Transform( 0.14, 0, 0, 0, 0.14, 0, 0, 0, 0.14, 8.51553, 0.397957, 7.84935 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 7 )
+
+[node name="n64tree3" type="MeshInstance" parent="scunt tf2"]
+transform = Transform( 0.14, 0, 0, 0, 0.14, 0, 0, 0, 0.14, 10.6999, 0.396548, -12.8526 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 7 )
+
+[node name="n64tree4" type="MeshInstance" parent="scunt tf2"]
+transform = Transform( 0.14, 0, 0, 0, 0.14, 0, 0, 0, 0.14, -9.88843, 0.396548, -2.78253 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 7 )
+
+[node name="n64tree5" type="MeshInstance" parent="scunt tf2"]
+transform = Transform( 0.14, 0, 0, 0, 0.14, 0, 0, 0, 0.14, -8.65498, 0.396548, 18.5691 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 7 )
+
+[node name="n64tree6" type="MeshInstance" parent="scunt tf2"]
+transform = Transform( 0.14, 0, 0, 0, 0.14, 0, 0, 0, 0.14, -8.65498, 0.396548, -14.2128 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 7 )
+
+[node name="n64tree7" type="MeshInstance" parent="scunt tf2"]
+transform = Transform( 0.14, 0, 0, 0, 0.14, 0, 0, 0, 0.14, -9.85421, 0.396549, 9.19864 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 7 )
