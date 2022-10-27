@@ -1,17 +1,18 @@
 extends KinematicBody
 
 var run_speed : float
-var ss_speed : float = 5.0
+var ss_speed : float = 2.0
 var velocity := Vector3()
 var gravity : float
 var jump_speed : float
 
-var time : float = 0.0
+var time : float = 2.0
 var step_freq : float = 2.0
 var step_height : float = 0.2
 var step_tilt : float = 9.0
 # Stand Name: Milk Man
 # Stand User: Maitomies
+# Stand Ability: Time Manipulation
 
 
 onready var body_hinge = $hinge
@@ -23,8 +24,8 @@ onready var body_hinge = $hinge
 # Called when the node enters the scene tree for the first time.
 func SetUp_Jump(length : float, height : float, speed : float):
 	run_speed = speed
-	gravity = 8.0 * height * speed * speed / (length * length)
-	jump_speed = 4.0 * height * speed / length
+	gravity = 2.0 * height * speed * speed / (length * length)
+	jump_speed = 2.0 * height * speed / length
 	#speen
 
 
@@ -43,7 +44,11 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_left"):
 	  sideways -= 3.0
 	
+	if Input.is_action_just_pressed("Jump") and is_on_floor():
+		velocity.y = jump_speed
+		
+	velocity.y -= gravity * delta
 	velocity.x = sideways * ss_speed
 	velocity.z = -run_speed
 	
-	move_and_slide(velocity)
+	velocity = move_and_slide(velocity, Vector3.UP)
