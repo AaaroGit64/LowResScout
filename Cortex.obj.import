@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Cortex.obj-57d6dbdafc7ad5a28b8f06a780224826.mesh"
+
+[deps]
+
+files=[ "res://.import/Cortex.obj-57d6dbdafc7ad5a28b8f06a780224826.mesh" ]
+
+source_file="res://Cortex.obj"
+dest_files=[ "res://.import/Cortex.obj-57d6dbdafc7ad5a28b8f06a780224826.mesh", "res://.import/Cortex.obj-57d6dbdafc7ad5a28b8f06a780224826.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

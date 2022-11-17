@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/CrunchHumFEShape.obj-74498a115a069fa974e0c6fbdb05a0c7.mesh"
+
+[deps]
+
+files=[ "res://.import/CrunchHumFEShape.obj-74498a115a069fa974e0c6fbdb05a0c7.mesh" ]
+
+source_file="res://CrunchHumFEShape.obj"
+dest_files=[ "res://.import/CrunchHumFEShape.obj-74498a115a069fa974e0c6fbdb05a0c7.mesh", "res://.import/CrunchHumFEShape.obj-74498a115a069fa974e0c6fbdb05a0c7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
