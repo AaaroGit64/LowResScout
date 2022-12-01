@@ -1,6 +1,6 @@
 extends Spatial
 
-var run_speed : float = 8.0
+var run_speed : float = 13.0
 var jump_length : float = 5.5
 var jump_height : float = 2.0
 
@@ -37,7 +37,9 @@ func _physics_process(delta):
 				road.translation.z += RoadBase.LENGTH
 				if road.translation.z > RoadBase.LENGTH:
 					road.queue_free()
-			
+		var new_road := make_random_road()
+		new_road.translation.z = initial_road_count * - RoadBase.LENGTH
+	
 			
 	Pivotcamera.translation = player.translation
 	Pivotcamera.translation.y = 0
@@ -45,7 +47,7 @@ func _physics_process(delta):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-func make_random_road():
+func make_random_road() ->RoadBase:
 	var road_scene = road_scenes[randi() % road_scenes.size()]
 	var road = road_scene.instance()
 	return road

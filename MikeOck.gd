@@ -24,8 +24,8 @@ onready var body_hinge = $hinge
 # Called when the node enters the scene tree for the first time.
 func SetUp_Jump(length : float, height : float, speed : float):
 	run_speed = speed
-	gravity = 2.0 * height * speed * speed / (length * length)
-	jump_speed = 2.0 * height * speed / length
+	gravity = 1.0 * height * speed * speed / (length * length)
+	jump_speed = 1.2 * height * speed / length
 	#speen
 
 

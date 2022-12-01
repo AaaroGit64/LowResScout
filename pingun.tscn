@@ -1,24 +1,25 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Ninja Penguin.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Ninja_Penguin_bmp.png" type="Texture" id=2]
+[ext_resource path="res://trash-container_d.png" type="Texture" id=1]
+[ext_resource path="res://trash-container.obj" type="ArrayMesh" id=2]
 
-[sub_resource type="SpatialMaterial" id=1]
-albedo_texture = ExtResource( 2 )
+[sub_resource type="SpatialMaterial" id=3]
+albedo_texture = ExtResource( 1 )
 
 [sub_resource type="BoxShape" id=2]
-extents = Vector3( 22.1671, 38.036, 14.4534 )
+extents = Vector3( 74.1643, 34.503, 14.4534 )
 
 [node name="Spatial" type="Spatial"]
 
 [node name="Ninja Penguin" type="MeshInstance" parent="."]
-transform = Transform( 0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, 0, 0, 0 )
-material_override = SubResource( 1 )
-mesh = ExtResource( 1 )
+transform = Transform( -3.0598e-08, -0.7, 0, 0.7, -3.0598e-08, 0, 0, 0, 0.7, 0, 0, 0 )
+material_override = SubResource( 3 )
+mesh = ExtResource( 2 )
 
 [node name="StaticBody" type="StaticBody" parent="Ninja Penguin"]
+transform = Transform( 0.0712182, 0.00547745, 0, -0.00547745, 0.0712183, 0, 0, 0, 0.0714286, 1.70299e-07, 2.66091e-09, -2.66092e-09 )
 collision_layer = 4
 
 [node name="CollisionShape" type="CollisionShape" parent="Ninja Penguin/StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.221732, 35.4952, -0.0488472 )
+transform = Transform( 0.20207, -0.0449766, 0, 0.0185096, 0.571121, 0, 0, 0, 0.898425, 13.9803, 0.978546, -0.282547 )
 shape = SubResource( 2 )
