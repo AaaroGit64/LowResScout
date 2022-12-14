@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/m_deck01_alb.png-53e3b6b55f9a3703aa9061c5b9dea59a.s3tc.stex"
-path.etc2="res://.import/m_deck01_alb.png-53e3b6b55f9a3703aa9061c5b9dea59a.etc2.stex"
+path.s3tc="res://.import/brickwall_4.jpg-eb7da3853d8c307b0500ded8132e3983.s3tc.stex"
+path.etc2="res://.import/brickwall_4.jpg-eb7da3853d8c307b0500ded8132e3983.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://m_deck01_alb.png"
-dest_files=[ "res://.import/m_deck01_alb.png-53e3b6b55f9a3703aa9061c5b9dea59a.s3tc.stex", "res://.import/m_deck01_alb.png-53e3b6b55f9a3703aa9061c5b9dea59a.etc2.stex" ]
+source_file="res://Models and Textures/brickwall_4.jpg"
+dest_files=[ "res://.import/brickwall_4.jpg-eb7da3853d8c307b0500ded8132e3983.s3tc.stex", "res://.import/brickwall_4.jpg-eb7da3853d8c307b0500ded8132e3983.etc2.stex" ]
 
 [params]
 

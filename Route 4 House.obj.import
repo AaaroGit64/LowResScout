@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Route 4 House.obj-02b17026494cba81aeb83b2ec361839a.mesh"
+
+[deps]
+
+files=[ "res://.import/Route 4 House.obj-02b17026494cba81aeb83b2ec361839a.mesh" ]
+
+source_file="res://Route 4 House.obj"
+dest_files=[ "res://.import/Route 4 House.obj-02b17026494cba81aeb83b2ec361839a.mesh", "res://.import/Route 4 House.obj-02b17026494cba81aeb83b2ec361839a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
