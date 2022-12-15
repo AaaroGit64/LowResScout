@@ -7,8 +7,8 @@
 [sub_resource type="SpatialMaterial" id=3]
 albedo_texture = ExtResource( 2 )
 
-[sub_resource type="CapsuleShape" id=2]
-radius = 0.5
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.28423, 0.884807, 0.172363 )
 
 [node name="Player" type="KinematicBody"]
 collision_mask = 6
@@ -23,5 +23,5 @@ skeleton = NodePath("../..")
 material/0 = SubResource( 3 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1, 0 )
-shape = SubResource( 2 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.433786, 0 )
+shape = SubResource( 4 )

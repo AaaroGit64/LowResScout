@@ -1,5 +1,8 @@
 extends KinematicBody
 
+signal obstacle_hit
+
+
 var run_speed : float
 var sidestep_speed : float = 5.0
 var velocity := Vector3()
@@ -34,6 +37,7 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_speed
+		
 	
 	velocity.y -= gravity * delta
 	velocity.x = sideways * sidestep_speed
@@ -45,5 +49,4 @@ func _physics_process(delta):
 		var collision = get_slide_collision(index)
 		var collision_object = collision.collider as CollisionObject
 		if collision_object.collision_layer & 4:
-			print("ouch")
-			get_tree().reload_current_scene()
+			emit_signal("obstacle_hit")
